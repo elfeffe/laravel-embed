@@ -1,6 +1,3 @@
-<div 
-    class="laravel-embed__responsive-wrapper" 
-    style="padding-bottom: {{ $aspectRatio->asPercentage() }}%"
->
+<div class="embed-responsive aspect-ratio-{{ $aspectRatio->withSlash() }} w-full">
     {{ $slot }}
 </div>
